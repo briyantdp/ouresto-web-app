@@ -92,7 +92,7 @@ Scenario('Searching favorited restaurants', async ({ I }) => {
   const visibleFavoritedRestaurants = await I.grabNumberOfVisibleElements('.card__title');
   assert.strictEqual(restaurantTitles.length, visibleFavoritedRestaurants);
 
-  const searchQuery = restaurantTitles[1].substring(1, 5);
+  const searchQuery = restaurantTitles[1].substring(1, 3);
 
   I.fillField('#searchRestaurant', searchQuery);
   I.pressKey('Enter');
