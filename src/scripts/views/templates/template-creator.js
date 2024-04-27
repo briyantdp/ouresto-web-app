@@ -22,22 +22,13 @@ const createRestaurantItemTemplate = (restaurant) => `
     <article class="popular__item">
         <div class="card skeleton">
             <div class="card__bg">
-                <picture>
-                    <source
-                        type="image/jpeg"
-                        src="${CONFIG.BASE_SMALL_IMAGE_URL}/${restaurant.pictureId}"
-                        tabindex="0"
-                        crossorigin="anonymous"
-                        class="lazyload"
-                    />
-                    <img
-                        src="${CONFIG.BASE_SMALL_IMAGE_URL}/${restaurant.pictureId}"
-                        alt="${restaurant.name} picture" 
-                        tabindex="0"
-                        crossorigin="anonymous"
-                        class="lazyload"
-                    />
-                </picture>
+                <img
+                    data-src="${CONFIG.BASE_MEDIUM_IMAGE_URL}/${restaurant.pictureId}"
+                    alt="${restaurant.name} picture" 
+                    tabindex="0"
+                    crossorigin="anonymous"
+                    class="lazyload"
+                />
             </div>
             <div class="card__content">
             <div class="card__desription">
@@ -137,22 +128,13 @@ const createFavouritedRestaurantItemTemplate = (restaurant) => `
 <article class="favourite__item">
     <div class="card skeleton">
         <div class="card__bg">
-        <picture>
-            <source
-                type="image/jpeg"
-                srcset="${CONFIG.BASE_SMALL_IMAGE_URL}/${restaurant.pictureId}"
-                tabindex="0"
-                crossorigin="anonymous"
-                class="lazyload"
-            />
             <img
-                src="${CONFIG.BASE_SMALL_IMAGE_URL}/${restaurant.pictureId}"
+                data-src="${CONFIG.BASE_MEDIUM_IMAGE_URL}/${restaurant.pictureId}"
                 alt="${restaurant.name} picture" 
                 tabindex="0"
                 crossorigin="anonymous"
                 class="lazyload"
             />
-        </picture>
         </div>
         <div class="card__content">
             <div class="card__desription">
