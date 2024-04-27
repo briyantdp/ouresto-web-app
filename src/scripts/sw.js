@@ -26,20 +26,6 @@ const restaurantListdbApi = new Route(
 );
 
 // Cache image item restaurant by Dicoding
-const restaurantSmallImageApi = new Route(
-  ({ url }) => url.href.startsWith('https://restaurant-api.dicoding.dev/images/small/') && url.href.includes('images/small/'),
-  new CacheFirst({
-    cacheName: 'restaurant-db-dicoding-small-image',
-    plugins: [
-      new ExpirationPlugin({
-        maxEntries: 100,
-        maxAgeSeconds: 60 * 60 * 24 * 30,
-      }),
-    ],
-  }),
-);
-
-// Cache image item restaurant by Dicoding
 const restaurantMediumImageApi = new Route(
   ({ url }) => url.href.startsWith('https://restaurant-api.dicoding.dev/images/medium/') && url.href.includes('images/medium/'),
   new CacheFirst({
