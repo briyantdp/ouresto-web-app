@@ -23,7 +23,7 @@ const createRestaurantItemTemplate = (restaurant) => `
         <div class="card skeleton">
             <div class="card__bg">
                 <img
-                    data-src="${CONFIG.BASE_MEDIUM_IMAGE_URL}/${restaurant.pictureId}"
+                    data-src="${CONFIG.BASE_SMALL_IMAGE_URL}/${restaurant.pictureId}"
                     alt="${restaurant.name} picture" 
                     tabindex="0"
                     crossorigin="anonymous"
@@ -129,7 +129,7 @@ const createFavouritedRestaurantItemTemplate = (restaurant) => `
     <div class="card skeleton">
         <div class="card__bg">
             <img
-                data-src="${CONFIG.BASE_MEDIUM_IMAGE_URL}/${restaurant.pictureId}"
+                data-src="${CONFIG.BASE_SMALL_IMAGE_URL}/${restaurant.pictureId}"
                 alt="${restaurant.name} picture" 
                 tabindex="0"
                 crossorigin="anonymous"
