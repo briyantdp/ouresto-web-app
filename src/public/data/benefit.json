@@ -1,0 +1,28 @@
+{
+    "benefits": [
+        {
+            "id": "1",
+            "classIcon": "fa-percentage",
+            "title": "Extra Discounts",
+            "description": "Get your special discount by using our reservation"
+        },
+        {
+            "id": "2",
+            "classIcon": "fa-utensils",
+            "title": "Come and Eat",
+            "description": "Get your own table quickly & without waiting in line"
+        },
+        {
+            "id": "3",
+            "classIcon": "fa-money-bill-wave-alt",
+            "title": "No Extra Fee",
+            "description": "Get tax free if you want to order food and make a reservation"
+        },
+        {
+            "id": "4",
+            "classIcon": "fa-hand-sparkles",
+            "title": "Guaranteed Cleanliness",
+            "description": "We ensure the cleanliness of the place as well as the food"
+        }
+    ]
+}

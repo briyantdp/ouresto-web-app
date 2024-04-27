@@ -1,0 +1,9 @@
+.idea
+.vscode
+.env
+.test.env
+
+node_modules
+e2e/output
+dist
+package-lock.json

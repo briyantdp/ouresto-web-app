@@ -1,0 +1,165 @@
+@import '../../color.scss';
+
+section.restaurant__detail {
+    width: 80%;
+    margin: 0 auto;
+
+    .restaurant__detail_image {
+        margin-block: 20px;
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+    } 
+
+    .restaurant__detail_content {
+        color: $black-color;
+        width: 100%;
+    
+        h1.restaurant__detail_content__title {
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+    
+        .restaurant__detail_content__information {
+            text-align: center;
+    
+            .restaurant__detail_content__information_address {
+            .fa-map-marker-alt, 
+            .restaurant__detail_content__location {
+                font-size: .9rem;
+                color: $black-color;
+                margin-block: .1rem;
+            }
+            }
+    
+            .restaurant__detail_content__information_rating {
+            .fa-star, 
+            .restaurant__detail_content__rating {
+                font-size: .9rem;
+                color: $yellow-color;
+                margin-block: .1rem;
+            }
+            
+            }
+    
+            button.favourite-button,
+            button.favourited-button {
+            border: none;
+            border-radius: 0.75rem;
+            font-size: 1rem;
+            padding: 1rem;
+            color: $black-color;
+            text-align: center;
+            margin-top: 10px;
+            }
+    
+            button.favourite-button {
+            background-color: $yellow-color;
+    
+            &:hover {
+                background-color: orange;
+                cursor: pointer;
+                transition: background-color 0.1s ease-in;
+            }
+            }
+    
+            button.favourited-button {
+            background-color: $black-color;
+            color: white;
+    
+            &:hover {
+                background-color: black;
+                cursor: pointer;
+                transition: background-color 0.1s ease-in;
+            }
+            }
+        }
+    
+    
+        .restaurant__detail_content__description {
+            border-radius: 1rem;
+            margin-block: 20px;
+            
+            h2.restaurant__detail_content__description_title {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            }
+    
+            p.restaurant__detail_content__description_content {
+            font-size: 1rem;
+            }
+        }
+    }
+
+    .restaurant__detail_content__menu {
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .restaurant__detail_content__menu_foods,
+        .restaurant__detail_content__menu_drinks {
+            border-radius: 1rem;
+            padding: 20px 40px;
+            margin-bottom: 20px;
+            background-color: #ecf0f6;
+            
+            &:hover {
+            border : 2px solid $black-color;
+            }
+
+        }
+        .restaurant__detail_content__menu_foods {
+            li {
+                margin-block: 10px;
+                list-style-type: "\1F957";
+            }
+        }
+        .restaurant__detail_content__menu_drinks {
+            li {
+                margin-block: 10px;
+                list-style-type: "\1F964";
+            }
+        }
+    }
+
+    .restaurant__detail__review {
+        h2 {
+            text-align: center;
+        }
+
+        .restaurant__detail__review_container {
+            width: 100%;
+            margin-block: 10px;
+
+            .card__review {
+                background-color: #ecf0f6;
+            
+                border-radius: 1rem;
+                padding: 1.5rem;
+                margin-block: 10px;
+                
+                &:hover {
+                    border : 2px solid $black-color;
+                }
+
+                .card__review_information {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+
+                    p {
+                        font-size: .85rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
